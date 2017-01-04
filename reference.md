@@ -1,7 +1,6 @@
 ---
 layout: page
-title: Programming with SageMath
-subtitle: Reference
+title: Reference
 ---
 
 ## [First session with SageMath](01-first-session.html)
