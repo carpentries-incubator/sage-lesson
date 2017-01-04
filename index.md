@@ -1,6 +1,6 @@
 ---
 layout: lesson
-title: Programming with SageMath
+root: .
 ---
 
 [SageMath](http://sagemath.org) is ...
@@ -17,7 +17,7 @@ On this path, the learner will became familiar with:
 
 * good design practices to organise code into complex programs.
 
-> ## Prerequisites {.prereq}
+> ## Prerequisites
 >
 > The lesson is oriented on learners possessing the minimal theoretical
 > background (at least at the undergraduate level)
@@ -27,18 +27,9 @@ On this path, the learner will became familiar with:
 >
 > Learners need to understand the concepts of files and directories
 > (including home and working directories) and know only how to start SageMath.
+ {: .prereq}
 
-> ## Getting ready {.getready}
+> ## Getting ready
 > 1. ...
 > 2. ...
-
-## Topics
-
-1.  [First session with SageMath](01-first-session.html)
-2.  ...
-
-## Other Resources
-
-*   [Reference](reference.html)
-*   [Discussion](discussion.html)
-*   [Instructor's Guide](instructors.html)
+{: .getready}
