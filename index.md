@@ -28,8 +28,3 @@ On this path, the learner will became familiar with:
 > Learners need to understand the concepts of files and directories
 > (including home and working directories) and know only how to start SageMath.
  {: .prereq}
-
-> ## Getting ready
-> 1. ...
-> 2. ...
-{: .getready}
