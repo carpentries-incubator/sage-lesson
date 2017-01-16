@@ -32,17 +32,12 @@ x[10]
 {: .source .python}
 
 ~~~
+---------------------------------------------------------------------------
+TypeError Traceback (most recent call last)
+<ipython-input-2-084faa554d6d> in <module>()
+----> 1 x[Integer(10)]
 
-    ---------------------------------------------------------------------------
-
-    TypeError                                 Traceback (most recent call last)
-
-    <ipython-input-2-084faa554d6d> in <module>()
-    ----> 1 x[Integer(10)]
-    
-
-    TypeError: 'sage.symbolic.expression.Expression' object does not support indexing
-
+TypeError: 'sage.symbolic.expression.Expression' object does not support indexing
 ~~~
 {: .error}
 Output generating figures:

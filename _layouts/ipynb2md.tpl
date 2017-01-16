@@ -16,7 +16,7 @@
 
 {% block error %}
 ~~~
-{{ super() }}
+{{- super()|replace("\n\n", "\n")|replace("    ", "") -}}
 ~~~
 {: .error}
 {% endblock error %}
