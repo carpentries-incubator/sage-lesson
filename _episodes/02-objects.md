@@ -56,7 +56,7 @@ plot(sin, (0,10))
 
 
 
-![png](02-objects_files/02-objects_5_0.png)
+![png](../02-objects_files/02-objects_5_0.png)
 
 
 For the challenges and their solutions, you need to pay attention to where the

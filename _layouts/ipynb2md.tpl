@@ -40,15 +40,15 @@
 {% endblock stream %}
 
 {% block data_svg %}
-![svg]({{ output.metadata.filenames['image/svg+xml'] | path2url }})
+![svg](../{{ output.metadata.filenames['image/svg+xml'] | path2url }})
 {% endblock data_svg %}
 
 {% block data_png %}
-![png]({{ output.metadata.filenames['image/png'] | path2url }})
+![png](../{{ output.metadata.filenames['image/png'] | path2url }})
 {% endblock data_png %}
 
 {% block data_jpg %}
-![jpeg]({{ output.metadata.filenames['image/jpeg'] | path2url }})
+![jpeg](../{{ output.metadata.filenames['image/jpeg'] | path2url }})
 {% endblock data_jpg %}
 
 {% block data_latex %}

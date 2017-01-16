@@ -90,8 +90,7 @@ lesson-rmd: $(RMD_SRC)
 
 ## lesson-ipynb       : convert IPython Notebook files to markdown
 lesson-ipynb: $(IPYNB_SRC)
-	${SAGE} -sh -c "jupyter nbconvert -y --execute --allow-errors --to markdown --template=_layouts/ipynb2md.tpl $(IPYNB_SRC)"
-	mv _episodes_ipynb/*.md _episodes
+	${SAGE} -sh -c "jupyter nbconvert -y --execute --allow-errors --to markdown --output-dir=_episodes --template=_layouts/ipynb2md.tpl $(IPYNB_SRC)"
 
 ## lesson-check     : validate lesson Markdown.
 lesson-check :
