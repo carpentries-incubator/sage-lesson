@@ -62,7 +62,7 @@ RMD_DST = $(patsubst _episodes_rmd/%.Rmd,_episodes/%.md,$(RMD_SRC))
 
 # RMarkdown files
 IPYNB_SRC = $(wildcard _episodes_ipynb/??-*.ipynb)
-IPYNB_DST = $(patsubst _episodes_ipynb/%.ipynb,_episodes/%.ipynb,$(RMD_SRC))
+IPYNB_DST = $(patsubst _episodes_ipynb/%.ipynb,_episodes/%.ipynb,$(IPYNB_SRC))
 
 # Lesson source files in the order they appear in the navigation menu.
 MARKDOWN_SRC = \
