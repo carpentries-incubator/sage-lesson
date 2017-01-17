@@ -17,7 +17,7 @@ commands :
 	@grep -h -E '^##' ${MAKEFILES} | sed -e 's/## //g'
 
 ## serve            : run a local server.
-serve : lesson-rmd
+serve : lesson-rmd lesson-ipynb
 	${JEKYLL} serve
 
 ## site             : build files but do not run a server.
