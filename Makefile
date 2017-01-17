@@ -112,6 +112,8 @@ unittest :
 lesson-files :
 	@echo 'RMD_SRC:' ${RMD_SRC}
 	@echo 'RMD_DST:' ${RMD_DST}
+	@echo 'IPYNB_SRC:' ${IPYNB_SRC}
+	@echo 'IPYNB_DST:' ${IPYNB_DST}
 	@echo 'MARKDOWN_SRC:' ${MARKDOWN_SRC}
 	@echo 'HTML_DST:' ${HTML_DST}
 
