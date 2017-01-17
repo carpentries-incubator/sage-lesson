@@ -88,7 +88,7 @@ HTML_DST = \
 lesson-rmd: $(RMD_SRC)
 	@bin/knit_lessons.sh $(RMD_SRC)
 
-## lesson-ipynb       : convert IPython Notebook files to markdown
+## lesson-ipynb     : convert IPython Notebook files to markdown
 lesson-ipynb: $(IPYNB_SRC)
 	${SAGE} -sh -c "jupyter nbconvert -y --execute --allow-errors --to markdown --output-dir=_episodes --template=_layouts/ipynb2md.tpl $(IPYNB_SRC)"
 
