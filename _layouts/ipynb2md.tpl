@@ -26,7 +26,6 @@
 {% endblock traceback_line %}
 
 {% block execute_result %}
-
 {% block data_priority scoped %}
 {{ super() }}
 {% endblock %}
@@ -34,7 +33,7 @@
 
 {% block stream %}
 ~~~
-{{ output.text | indent }}
+{{ output.text }}
 ~~~
 {: .output}
 {% endblock stream %}
@@ -64,7 +63,10 @@
 {% endblock data_markdown %}
 
 {% block data_text scoped %}
-{{ output.data['text/plain'] | indent }}
+~~~
+{{ output.data['text/plain'] }}
+~~~
+{: .output}
 {% endblock data_text %}
 
 {%- block markdowncell scoped -%}

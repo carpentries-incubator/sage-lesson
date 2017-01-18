@@ -19,8 +19,10 @@ include chunk for codes, just like you'd normally do.
 
 
 
-
-    2
+~~~
+2
+~~~
+{: .output}
 
 
 Output with error message:
@@ -50,27 +52,43 @@ plot(sin, (0,10))
 
 
 
-
 ![png](../02-objects_files/02-objects_5_0.png)
 
 
-For the challenges and their solutions, you need to pay attention to where the
-`>` go and where to leave blank lines. You can include code chunks in both the
-instructions and solutions. For instance this:
+For the challenges
+you need to pay attention to include `<blockquote class="challenge">`
+before it and `<\blockquote>` after it.
+And for the solutions
+you need to pay attention to include `<blockquote class="solution">`
+before it and `<\blockquote>` after it.
+**This hacks is necessary for allow include Jupyter cells on challenges and solutions.**
+<blockquote class="challenge">
+## Challenge: Can you do it?
 
-> ## Challenge: Can you do it?
->
-> What is the output of this command?
->
-> ~~~
-> "a" + "b"
-> ~~~
-> {: .source}
->
-> > ## Solution
-> >
-> > ~~~
-> > ab
-> > ~~~
-> {: .solution}
-{: .challenge}
+What is the output of this command?
+
+~~~
+"a" + "b"
+~~~
+{: .source}
+
+<blockquote class="solution">
+
+## Solution
+
+
+~~~
+"a" + "b"
+~~~
+{: .source .python}
+
+
+
+~~~
+'ab'
+~~~
+{: .output}
+
+
+</blockquote>
+</blockquote>
