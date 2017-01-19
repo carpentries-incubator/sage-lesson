@@ -1,5 +1,5 @@
 ---
-title: Objects
+title: First session with SageMath
 teaching: 30
 exercises: 0
 questions:
@@ -8,8 +8,8 @@ objectives:
 - "..."
 ---
 
-The rest of the lesson should be written as a normal RMarkdown file. You can
-include chunk for codes, just like you'd normally do.
+Lesson text
+
 
 
 ~~~
@@ -25,6 +25,22 @@ include chunk for codes, just like you'd normally do.
 {: .output}
 
 
+
+
+~~~
+matrix([[1,2], [3,4]])^(-1)
+~~~
+{: .source .python}
+
+
+
+~~~
+[  -2    1]
+[ 3/2 -1/2]
+~~~
+{: .output}
+
+
 Output with error message:
 
 
@@ -36,7 +52,7 @@ x[10]
 ~~~
 ---------------------------------------------------------------------------
 TypeError Traceback (most recent call last)
-<ipython-input-2-084faa554d6d> in <module>()
+<ipython-input-3-084faa554d6d> in <module>()
 ----> 1 x[Integer(10)]
 
 TypeError: 'sage.symbolic.expression.Expression' object does not support indexing
@@ -52,7 +68,7 @@ plot(sin, (0,10))
 
 
 
-![png](../02-objects_files/02-objects_5_0.png)
+![png](../01-introduction_files/01-introduction_6_0.png)
 
 
 For the challenges
