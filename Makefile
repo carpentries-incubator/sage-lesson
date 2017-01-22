@@ -17,7 +17,7 @@ commands :
 	@grep -h -E '^##' ${MAKEFILES} | sed -e 's/## //g'
 
 ## serve            : run a local server.
-serve : lesson-rmd
+serve : lesson-rmd lesson-ipynb
 	${JEKYLL} serve
 
 ## site             : build files but do not run a server.
@@ -62,7 +62,7 @@ RMD_DST = $(patsubst _episodes_rmd/%.Rmd,_episodes/%.md,$(RMD_SRC))
 
 # RMarkdown files
 IPYNB_SRC = $(wildcard _episodes_ipynb/??-*.ipynb)
-IPYNB_DST = $(patsubst _episodes_ipynb/%.ipynb,_episodes/%.ipynb,$(RMD_SRC))
+IPYNB_DST = $(patsubst _episodes_ipynb/%.ipynb,_episodes/%.ipynb,$(IPYNB_SRC))
 
 # Lesson source files in the order they appear in the navigation menu.
 MARKDOWN_SRC = \
@@ -88,7 +88,7 @@ HTML_DST = \
 lesson-rmd: $(RMD_SRC)
 	@bin/knit_lessons.sh $(RMD_SRC)
 
-## lesson-ipynb       : convert IPython Notebook files to markdown
+## lesson-ipynb     : convert IPython Notebook files to markdown
 lesson-ipynb: $(IPYNB_SRC)
 	${SAGE} -sh -c "jupyter nbconvert -y --execute --allow-errors --to markdown --output-dir=_episodes --template=_layouts/ipynb2md.tpl $(IPYNB_SRC)"
 
@@ -112,6 +112,8 @@ unittest :
 lesson-files :
 	@echo 'RMD_SRC:' ${RMD_SRC}
 	@echo 'RMD_DST:' ${RMD_DST}
+	@echo 'IPYNB_SRC:' ${IPYNB_SRC}
+	@echo 'IPYNB_DST:' ${IPYNB_DST}
 	@echo 'MARKDOWN_SRC:' ${MARKDOWN_SRC}
 	@echo 'HTML_DST:' ${HTML_DST}
 
