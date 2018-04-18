@@ -6,6 +6,7 @@ MAKEFILES=Makefile $(wildcard *.mk)
 JEKYLL=jekyll
 PARSER=bin/markdown_ast.rb
 DST=_site
+SAGE=sage
 
 # Controls
 .PHONY : commands clean files
@@ -17,7 +18,7 @@ commands :
 	@grep -h -E '^##' ${MAKEFILES} | sed -e 's/## //g'
 
 ## serve            : run a local server.
-serve : lesson-md
+serve : lesson-md lesson-ipynb
 	${JEKYLL} serve
 
 ## site             : build files but do not run a server.
@@ -60,6 +61,10 @@ workshop-check :
 RMD_SRC = $(wildcard _episodes_rmd/??-*.Rmd)
 RMD_DST = $(patsubst _episodes_rmd/%.Rmd,_episodes/%.md,$(RMD_SRC))
 
+# RMarkdown files
+IPYNB_SRC = $(wildcard _episodes_ipynb/??-*.ipynb)
+IPYNB_DST = $(patsubst _episodes_ipynb/%.ipynb,_episodes/%.ipynb,$(IPYNB_SRC))
+
 # Lesson source files in the order they appear in the navigation menu.
 MARKDOWN_SRC = \
   index.md \
@@ -87,6 +92,10 @@ lesson-md : ${RMD_DST}
 ${RMD_DST} : ${RMD_SRC}
 	@bin/knit_lessons.sh ${RMD_SRC}
 
+## lesson-ipynb     : convert IPython Notebook files to markdown
+lesson-ipynb: $(IPYNB_SRC)
+	${SAGE} -sh -c "jupyter nbconvert -y --execute --allow-errors --to markdown --output-dir=_episodes --template=_layouts/ipynb2md.tpl $(IPYNB_SRC)"
+
 ## lesson-check     : validate lesson Markdown.
 lesson-check :
 	@bin/lesson_check.py -s . -p ${PARSER} -r _includes/links.md
@@ -103,6 +112,8 @@ unittest :
 lesson-files :
 	@echo 'RMD_SRC:' ${RMD_SRC}
 	@echo 'RMD_DST:' ${RMD_DST}
+	@echo 'IPYNB_SRC:' ${IPYNB_SRC}
+	@echo 'IPYNB_DST:' ${IPYNB_DST}
 	@echo 'MARKDOWN_SRC:' ${MARKDOWN_SRC}
 	@echo 'HTML_DST:' ${HTML_DST}
 
