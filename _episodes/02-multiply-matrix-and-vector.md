@@ -56,7 +56,7 @@ v = vector([x, y, z])
 ~~~
 ---------------------------------------------------------------------------
 NameError Traceback (most recent call last)
-<ipython-input-3-74f33ececb47> in <module>()
+<ipython-input-3-41c893d7dada> in <module>()
 ----> 1 v = vector([x, y, z])
 
 NameError: name 'y' is not defined

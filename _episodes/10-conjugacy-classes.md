@@ -32,7 +32,7 @@ for i in range(4):
 ~~~
 ---------------------------------------------------------------------------
 NameError Traceback (most recent call last)
-<ipython-input-1-de1a82d64aa5> in <module>()
+<ipython-input-1-5276f40c23db> in <module>()
   6 for j in range(Integer(4)):
   7 print("coset", i, j)
 ----> 8 print(g[i] * g[j] * g_inverse[i])

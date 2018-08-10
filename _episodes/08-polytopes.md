@@ -18,15 +18,15 @@ point3d(icosahedron, size=100)
 ~~~
 ---------------------------------------------------------------------------
 TypeError Traceback (most recent call last)
-<ipython-input-1-ac7152bff65d> in <module>()
+<ipython-input-1-c2abeaa4fd8f> in <module>()
 ----> 1 point3d(icosahedron, size=Integer(100))
 
-/home/raniere/src/sagemath/local/lib/python2.7/site-packages/sage/plot/plot3d/shapes2.pyc in point3d(v, size, **kwds)
-   1126 except TypeError:
-   1127 # argument is an iterator
--> 1128 v = list(v)
-   1129 l = len(v)
-   1130 
+/Applications/SageMath/local/lib/python2.7/site-packages/sage/plot/plot3d/shapes2.pyc in point3d(v, size, **kwds)
+   1157 except TypeError:
+   1158 # argument is an iterator
+-> 1159 v = list(v)
+   1160 l = len(v)
+   1161 
 
 TypeError: 'function' object is not iterable
 ~~~
@@ -41,7 +41,7 @@ icosahedron=[v.change_ring(RDF) for v in icosahedron]
 ~~~
 ---------------------------------------------------------------------------
 TypeError Traceback (most recent call last)
-<ipython-input-2-1b3d6e6c9ee0> in <module>()
+<ipython-input-2-1f12cb25ad56> in <module>()
 ----> 1 icosahedron=[v.change_ring(RDF) for v in icosahedron]
 
 TypeError: 'function' object is not iterable
@@ -59,32 +59,18 @@ plot(P)
 ~~~
 ---------------------------------------------------------------------------
 TypeError Traceback (most recent call last)
-<ipython-input-3-ca2e0cfea00f> in <module>()
+<ipython-input-3-bffb43d38643> in <module>()
 ----> 1 P=Polyhedron(icosahedron)
   2 plot(P)
 
-/home/raniere/src/sagemath/src/sage/misc/lazy_import.pyx in sage.misc.lazy_import.LazyImport.__call__ (/home/raniere/src/sagemath/src/build/cythonized/sage/misc/lazy_import.c:3646)()
-387 True
-388 """
---> 389 return self._get_object()(*args, **kwds)
-390 
-391 def __repr__(self):
+/Applications/SageMath/local/lib/python2.7/site-packages/sage/geometry/polyhedron/constructor.pyc in Polyhedron(vertices, rays, lines, ieqs, eqns, ambient_dim, base_ring, minimize, verbose, backend)
+496 """
+497 # Clean up the arguments
+--> 498 vertices = _make_listlist(vertices)
+499 rays = _make_listlist(rays)
+500 lines= _make_listlist(lines)
 
-/home/raniere/src/sagemath/local/lib/python2.7/site-packages/sage/misc/decorators.pyc in wrapper(*args, **kwds)
-710 kwds[new_name] = kwds[old_name]
-711 del kwds[old_name]
---> 712 return func(*args, **kwds)
-713 
-714 return wrapper
-
-/home/raniere/src/sagemath/local/lib/python2.7/site-packages/sage/geometry/polyhedron/constructor.pyc in Polyhedron(vertices, rays, lines, ieqs, eqns, ambient_dim, base_ring, minimize, verbose, backend)
-366 """
-367 # Clean up the arguments
---> 368 vertices = _make_listlist(vertices)
-369 rays = _make_listlist(rays)
-370 lines= _make_listlist(lines)
-
-/home/raniere/src/sagemath/local/lib/python2.7/site-packages/sage/geometry/polyhedron/misc.pyc in _make_listlist(x)
+/Applications/SageMath/local/lib/python2.7/site-packages/sage/geometry/polyhedron/misc.pyc in _make_listlist(x)
  88 """
  89 if x is None: return []
 ---> 90 return [list(y) for y in x]
@@ -105,15 +91,15 @@ point3d(dodecahedron, size=100)
 ~~~
 ---------------------------------------------------------------------------
 TypeError Traceback (most recent call last)
-<ipython-input-4-d68179445688> in <module>()
+<ipython-input-4-71b742c5fe83> in <module>()
 ----> 1 point3d(dodecahedron, size=Integer(100))
 
-/home/raniere/src/sagemath/local/lib/python2.7/site-packages/sage/plot/plot3d/shapes2.pyc in point3d(v, size, **kwds)
-   1126 except TypeError:
-   1127 # argument is an iterator
--> 1128 v = list(v)
-   1129 l = len(v)
-   1130 
+/Applications/SageMath/local/lib/python2.7/site-packages/sage/plot/plot3d/shapes2.pyc in point3d(v, size, **kwds)
+   1157 except TypeError:
+   1158 # argument is an iterator
+-> 1159 v = list(v)
+   1160 l = len(v)
+   1161 
 
 TypeError: 'function' object is not iterable
 ~~~
@@ -128,7 +114,7 @@ point3d(icosidodecahedron, size=100)
 ~~~
 ---------------------------------------------------------------------------
 NameError Traceback (most recent call last)
-<ipython-input-5-48adc3c484d9> in <module>()
+<ipython-input-5-8d3f381b9712> in <module>()
 ----> 1 point3d(icosidodecahedron, size=Integer(100))
 
 NameError: name 'icosidodecahedron' is not defined

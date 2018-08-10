@@ -17,7 +17,7 @@ g
 ~~~
 ---------------------------------------------------------------------------
 NameError Traceback (most recent call last)
-<ipython-input-1-f5302386464f> in <module>()
+<ipython-input-1-a5938ace3f42> in <module>()
 ----> 1 g
 
 NameError: name 'g' is not defined
@@ -42,7 +42,7 @@ for i in range(count):
 ~~~
 ---------------------------------------------------------------------------
 NameError Traceback (most recent call last)
-<ipython-input-2-c36458ec36f6> in <module>()
+<ipython-input-2-099b1cba1968> in <module>()
   1 counteven=Integer(0)
   2 g_even = []
 ----> 3 for i in range(count):

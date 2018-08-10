@@ -31,7 +31,7 @@ point3d(T4capsid, size=100)
 ~~~
 ---------------------------------------------------------------------------
 NameError Traceback (most recent call last)
-<ipython-input-1-83bedcdee0c5> in <module>()
+<ipython-input-1-871835d35841> in <module>()
   8 
   9 for seed in seeds:
 ---> 10 for i in range(count_even):

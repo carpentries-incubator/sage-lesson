@@ -78,7 +78,7 @@ for i in range(count):
 ~~~
 ---------------------------------------------------------------------------
 NameError Traceback (most recent call last)
-<ipython-input-1-8c25b261fd22> in <module>()
+<ipython-input-1-ea4e5604c196> in <module>()
   1 g=[]
   2 count=Integer(3)
 ----> 3 g.append(reflection_matrix([Integer(1), Integer(0), Integer(0)]))
@@ -112,7 +112,7 @@ for i in range(4):
 ~~~
 ---------------------------------------------------------------------------
 IndexErrorTraceback (most recent call last)
-<ipython-input-2-9bb3d9711914> in <module>()
+<ipython-input-2-556b15531121> in <module>()
   4 for j in range(Integer(4)):
   5 print("coset", i, j)
 ----> 6 print(g[i] * g[j] * g_inverse[i])
@@ -188,7 +188,7 @@ for i in range(count):
 ~~~
 ---------------------------------------------------------------------------
 NameError Traceback (most recent call last)
-<ipython-input-3-11be0aba83ae> in <module>()
+<ipython-input-3-c0e43326c918> in <module>()
   2 g=[]
   3 count=Integer(3)
 ----> 4 g.append(reflection_matrix([-Integer(1)/r, Integer(1)/r, Integer(0)]))
@@ -221,7 +221,7 @@ for i in range(4):
 ~~~
 ---------------------------------------------------------------------------
 IndexErrorTraceback (most recent call last)
-<ipython-input-4-e24cf675b289> in <module>()
+<ipython-input-4-0da13ae44ab1> in <module>()
   4 for j in range(Integer(4)):
   5 print("coset", i, j)
 ----> 6 print(g[i] * g[j] * g_inverse[i])
@@ -303,7 +303,7 @@ for i in range(count):
 ~~~
 ---------------------------------------------------------------------------
 NameError Traceback (most recent call last)
-<ipython-input-5-41818393244c> in <module>()
+<ipython-input-5-b0289907e34d> in <module>()
   3 count = Integer(3)
   4 
 ----> 5 g.append(reflection_matrix([Integer(1), Integer(0), Integer(0)]))
@@ -373,7 +373,7 @@ for i in range(count):
 {: .source .python}
 
 ~~~
-  File "<ipython-input-6-cb71787085bb>", line 7
+  File "<ipython-input-6-d5412d0509f1>", line 7
 g.append(reflection_matrix((Integer(0), Integer(0), Integer(1))))
 ^
 SyntaxError: invalid syntax
@@ -439,7 +439,7 @@ for i in range(count):
 {: .source .python}
 
 ~~~
-  File "<ipython-input-7-38f40c98dc56>", line 6
+  File "<ipython-input-7-63a9d1e66a12>", line 6
 g.append(reflection_matrix((-Integer(1)/Integer(4)*(Integer(1)+a), -Integer(1)/Integer(2), -Integer(1)/Integer(4)*(Integer(1)-a)))
 ^
 SyntaxError: invalid syntax

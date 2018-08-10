@@ -46,7 +46,7 @@ for i in range(count):
 ~~~
 ---------------------------------------------------------------------------
 NameError Traceback (most recent call last)
-<ipython-input-1-395053567c84> in <module>()
+<ipython-input-1-034c9970490c> in <module>()
   1 count = Integer(1)
   2 
 ----> 3 g = [A]
@@ -81,7 +81,7 @@ for i in range(count):
 ~~~
 ---------------------------------------------------------------------------
 NameError Traceback (most recent call last)
-<ipython-input-2-fcc665fcf25f> in <module>()
+<ipython-input-2-cac1c24ed306> in <module>()
   5 for i in range(count):
   6 for j in range(count):
 ----> 7 if (I3-g[i]*g[j])<RealNumber('0.01'):

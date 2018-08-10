@@ -34,7 +34,7 @@ icosahedron = []
 ~~~
 ---------------------------------------------------------------------------
 NameError Traceback (most recent call last)
-<ipython-input-1-23df852badd3> in <module>()
+<ipython-input-1-821892a79424> in <module>()
   2 T5 = vector([Integer(0),Integer(1),RealNumber('1.618')])
   3 seed = T5
 ----> 4 for i in range(counteven):
@@ -64,7 +64,7 @@ for i in range(counteven):
 ~~~
 ---------------------------------------------------------------------------
 NameError Traceback (most recent call last)
-<ipython-input-2-19e7573373b6> in <module>()
+<ipython-input-2-5334fe9fc495> in <module>()
   2 T3 = vector([Integer(1),Integer(1),Integer(1)])
   3 seed = T3
 ----> 4 for i in range(counteven):
@@ -94,7 +94,7 @@ for i in range(counteven):
 ~~~
 ---------------------------------------------------------------------------
 NameError Traceback (most recent call last)
-<ipython-input-3-c316e265773c> in <module>()
+<ipython-input-3-927719d81fb9> in <module>()
   2 T2 = vector([Integer(1),Integer(0),Integer(0)])
   3 seed = T2
 ----> 4 for i in range(counteven):

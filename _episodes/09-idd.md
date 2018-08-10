@@ -31,7 +31,7 @@ for points in IDD:
 ~~~
 ---------------------------------------------------------------------------
 NameError Traceback (most recent call last)
-<ipython-input-1-4f6e79991568> in <module>()
+<ipython-input-1-a4505ffd1166> in <module>()
 ----> 1 IDD=icosidodecahedron
   2 
   3 for points in IDD:
