@@ -48,3 +48,14 @@ Send a pull request with **only** the changes on `_episodes_ipynb`
 to [https://github.com/alex-konovalov/sage-lesson/](https://github.com/alex-konovalov/sage-lesson/).
 
 [SageMath]: http://sagemath.org
+
+## Acknowledgements
+
+We acknowledge financial support from [CCP-CoDiMa](https://www.codima.ac.uk/)
+(Collaborative Computational Project in the area of Computational Discrete Mathematics
+[EP/M022641/1](http://gow.epsrc.ac.uk/NGBOViewGrant.aspx?GrantRef=EP/M022641/1))
+and from [OpenDreamKit](http://opendreamkit.org/) [Horizon 2020](https://ec.europa.eu/programmes/horizon2020/)
+[European Research Infrastructures](https://ec.europa.eu/programmes/horizon2020/en/h2020-section/european-research-infrastructures-including-e-infrastructures)
+project (#<a href="http://cordis.europa.eu/project/rcn/198334_en.html">676541</a>).
+
+
